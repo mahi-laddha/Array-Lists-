@@ -18,7 +18,7 @@ public class ArrayLists {
         System.out.println("Even numbers: " + even);
         System.out.println("Odd numbers: " + odd);
     }
-public static int findSmallestDistance(int[] numbers) {
+    public static int findSmallestDistance(int[] numbers) {
         if (numbers.length < 2) return -1;
         
         int minIndex = 0;
@@ -33,3 +33,13 @@ public static int findSmallestDistance(int[] numbers) {
         }
         return minIndex;
     }
+    public static ArrayList<Integer> arrayToList(int[] array) {
+        ArrayList<Integer> list = new ArrayList<>();
+        for (int num : array) {
+            list.add(num);
+        }
+	//System.out.println("Converted to ArrayList: " + List + " (Type: " + list.getClass().getSimpleName() + ")");
+	System.out.println("Data type of 'list': " + list.getClass().getName());
+        return list;
+    }
+
