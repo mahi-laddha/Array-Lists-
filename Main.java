@@ -1,4 +1,7 @@
 // Main.java
+// Name: mahi laddha
+// PRN: 23070126069
+// Batch: A3
 
 import java.util.*;
 
