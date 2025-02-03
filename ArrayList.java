@@ -18,3 +18,18 @@ public class ArrayLists {
         System.out.println("Even numbers: " + even);
         System.out.println("Odd numbers: " + odd);
     }
+public static int findSmallestDistance(int[] numbers) {
+        if (numbers.length < 2) return -1;
+        
+        int minIndex = 0;
+        int minDistance = Math.abs(numbers[1] - numbers[0]);
+        
+        for (int i = 1; i < numbers.length - 1; i++) {
+            int distance = Math.abs(numbers[i + 1] - numbers[i]);
+            if (distance < minDistance) {
+                minDistance = distance;
+                minIndex = i;
+            }
+        }
+        return minIndex;
+    }
