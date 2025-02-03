@@ -42,4 +42,14 @@ public class ArrayLists {
 	System.out.println("Data type of 'list': " + list.getClass().getName());
         return list;
     }
+    public static int[] listToArray(ArrayList<Integer> list) {
+        int[] array = new int[list.size()];
+        for (int i = 0; i < list.size(); i++) {
+            array[i] = list.get(i);
+        }
+	System.out.println("Data type of 'array': " + array.getClass().getName());
+        return array;
+    }
+
+}
 
